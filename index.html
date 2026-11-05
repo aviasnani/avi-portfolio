@@ -58,7 +58,7 @@
       <!-- Hero -->
       <section class="hero" id="home">
         <div class="card" id="card" data-cursor="Tilt me">
-          <img class="card-photo" src="images/avi.png" alt="Avi Asnani" />
+          <img class="card-photo" src="images/avi.jpg" alt="Avi Asnani" />
           <div class="card-info">
             <p class="card-tag">Ability card</p>
             <p class="card-role">Full stack developer</p>
@@ -117,7 +117,7 @@
             >
             <span class="room"
               ><em
-                >REST APIs in MVC style with routes, controllers and
+                >REST APIs, MVC architecture with routes, controllers and
                 middleware.</em
               ></span
             >
@@ -151,8 +151,8 @@
             >
             <span class="room"
               ><em
-                >Cashier and admin permissions, input validation and data
-                integrity.</em
+                >JWT authentication and OAuth, Role-based access control - 1
+                (Authorization), Route-level guarding</em
               ></span
             >
           </button>
@@ -276,10 +276,10 @@
 
       <!-- Projects -->
       <section class="projects" id="projects">
-        <h2>Side projects</h2>
+        <h2>Projects</h2>
         <div class="proj-grid">
           <article>
-            <h3>QR Based Point of Sale</h3>
+            <h3>BigPOS</h3>
             <p class="org">
               React, Node.js, PostgreSQL, WebSockets, Railway, Vercel
             </p>
@@ -301,6 +301,32 @@
             </ul>
           </article>
           <article>
+            <h3>Pharmacy Inventory Management</h3>
+            <p class="org">
+              Flask, SQLAlchemy, Flask-Login, JavaScript, SQLite · MSc project
+            </p>
+            <ul>
+              <li>
+                Web app with separate admin and staff panels: admins create,
+                edit and delete staff accounts, and staff manage the medicine
+                inventory.
+              </li>
+              <li>
+                Login-based authentication with role-specific access, and a
+                JavaScript frontend that calls the REST API with Fetch.
+              </li>
+              <li>Deployed on Vercel.</li>
+            </ul>
+            <br>
+              <a
+                href="https://github.com/aviasnani/Hickeys-pharmacy"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </p>
+          </article>
+          <article>
             <h3>Cloud Infrastructure Automation</h3>
             <p class="org">
               AWS EC2, Terraform, Docker, GitHub Actions, Ansible, Python
@@ -311,11 +337,28 @@
                 CI/CD pipeline from GitHub Actions to DockerHub to EC2 via
                 Ansible, cutting deployment time by 15 minutes.
               </li>
+              <li>
+                Group project for the Networks and Systems Administration
+                module, with a Flask app running in Docker on a t2.micro
+                instance.
+              </li>
             </ul>
+            <p class="proj-links">
+              <a
+                href="https://github.com/aviasnani/networking"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </p>
           </article>
         </div>
+        <p class="more">
+          <a href="https://github.com/aviasnani" target="_blank" rel="noopener"
+            >More projects on GitHub</a
+          >
+        </p>
       </section>
-
       <!-- CTA -->
       <section class="cta" id="contact">
         <p class="status"><span class="dot"></span>Available for new roles</p>
@@ -330,12 +373,26 @@
     <footer>
       <p>© 2026 Avi Asnani</p>
       <p>
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/aviasnani" target="_blank" rel="noopener"
+          >GitHub</a
+        >
         <a
           href="https://linkedin.com/in/aviasnani/"
           target="_blank"
           rel="noopener"
           >LinkedIn</a
+        >
+        <a
+          href="mailto:aviasnani3104@gmail.com"
+          target="_blank"
+          rel="noopener"
+          >Email</a
+        >
+        <a
+          href="tel:+353852287312"
+          target="_blank"
+          rel="noopener"
+          >Phone</a
         >
       </p>
       <a href="#home" id="toTop">Back to top ↑</a>

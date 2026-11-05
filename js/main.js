@@ -30,7 +30,7 @@
 
   /* Typing headline */
   const typed = $('#typed');
-  const roles = ['full-stack developer', 'software engineer', 'REST API builder', 'problem solver'];
+  const roles = ['full-stack developer', 'software engineer', 'techie', 'problem solver'];
   let ri = 0, ci = 0, del = false;
   (function type() {
     const word = roles[ri];
