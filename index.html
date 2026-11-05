@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avi Asnani — Full Stack Developer, Dublin</title>
+    <meta
+      name="description"
+      content="Full-stack software engineer in Dublin building reliable web applications with React, Node.js and PostgreSQL."
+    />
+    <meta name="theme-color" content="#1A1818" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Inter+Tight:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- Loader -->
+    <div class="loader" id="loader" aria-live="polite">
+      <p>Loading the card</p>
+      <strong id="count">0%</strong>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+    <!-- Header -->
+    <header class="top">
+      <a href="#home" class="brand">Avi Asnani</a>
+      <p class="clock">Dublin <span id="clock">--:--</span></p>
+      <button
+        class="btn ghost"
+        id="menuBtn"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        Menu
+      </button>
+    </header>
+
+    <nav class="menu" id="menu" aria-label="Main" hidden>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">What I build</a></li>
+        <li><a href="#story">My story</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" data-open-contact>Contact</a></li>
+      </ul>
+      <p class="menu-foot">aviasnani3104@gmail.com</p>
+    </nav>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="card" id="card" data-cursor="Tilt me">
+          <img class="card-photo" src="images/avi.png" alt="Avi Asnani" />
+          <div class="card-info">
+            <p class="card-tag">Ability card</p>
+            <p class="card-role">Full stack developer</p>
+            <p class="card-meta">
+              MSc Computing, 1st Class Honours. Eligible to work in Ireland
+            </p>
+            <ul class="card-stats">
+              <li><b>React</b> UI</li>
+              <li><b>Node</b> APIs</li>
+              <li><b>SQL</b> Data</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <h1>
+            Hi, I'm Avi. I am a <span class="typed" id="typed"></span
+            ><i class="caret"></i>
+          </h1>
+          <p>
+            I design and build web applications, REST APIs and business
+            management systems with React, Node.js and PostgreSQL. My latest one
+            runs a shop's tills in production.
+          </p>
+          <div class="actions">
+            <button class="btn" data-open-contact data-cursor="Say hi">
+              Hire me
+            </button>
+            <a class="btn ghost" href="#work" data-cursor="Look">See my work</a>
+          </div>
+          <p class="status">
+            <span class="dot"></span>Eligible to work in Ireland. Open to
+            software engineering roles
+          </p>
+        </div>
+      </section>
+
+      <!-- Doors -->
+      <section class="doors" id="work">
+        <h2>Magic happens<br />behind the doors</h2>
+        <p class="hint">Drag along the wall, click a door to open it.</p>
+        <div class="wall" id="wall">
+          <button class="door" aria-expanded="false">
+            <span class="panel"
+              ><b>Frontend</b><small>React.js, Next.js</small></span
+            >
+            <span class="room"
+              ><em
+                >Responsive, component-based interfaces with state management
+                and form validation.</em
+              ></span
+            >
+          </button>
+          <button class="door" aria-expanded="false">
+            <span class="panel"
+              ><b>Backend</b><small>Node.js, Express, Flask</small></span
+            >
+            <span class="room"
+              ><em
+                >REST APIs in MVC style with routes, controllers and
+                middleware.</em
+              ></span
+            >
+          </button>
+          <button class="door" aria-expanded="false">
+            <span class="panel"
+              ><b>Databases</b><small>PostgreSQL, MS SQL, MongoDB</small></span
+            >
+            <span class="room"
+              ><em
+                >Normalised schemas with constraint-level integrity under
+                concurrent use.</em
+              ></span
+            >
+          </button>
+          <button class="door" aria-expanded="false">
+            <span class="panel"
+              ><b>Cloud and DevOps</b
+              ><small>AWS EC2, Terraform, Docker</small></span
+            >
+            <span class="room"
+              ><em
+                >CI/CD with GitHub Actions and Ansible. Deploys cut from 30
+                minutes to 5.</em
+              ></span
+            >
+          </button>
+          <button class="door" aria-expanded="false">
+            <span class="panel"
+              ><b>Security</b><small>JWT, RBAC, OWASP Top 10</small></span
+            >
+            <span class="room"
+              ><em
+                >Cashier and admin permissions, input validation and data
+                integrity.</em
+              ></span
+            >
+          </button>
+          <button class="door" aria-expanded="false">
+            <span class="panel"
+              ><b>AI tools</b><small>Copilot, Amazon Q, Claude</small></span
+            >
+            <span class="room"
+              ><em
+                >AI assistants in my daily coding, debugging and
+                documentation.</em
+              ></span
+            >
+          </button>
+        </div>
+      </section>
+
+      <!-- Story -->
+      <section class="story" id="story">
+        <div class="story-side">
+          <h2>Let's go back in time.</h2>
+          <p class="when" id="when">Now</p>
+          <p class="count">
+            <span id="idx">01</span> / <span id="total">06</span>
+          </p>
+        </div>
+        <ol class="timeline" id="timeline">
+          <li data-when="May 2026 — Now">
+            <h3>Software Developer, POS</h3>
+            <p class="org">Gift Emporium Ltd. · Dublin, Ireland</p>
+            <ul>
+              <li>
+                Designed and built a full-stack POS and business management
+                system with React.js, Node.js, Express.js and PostgreSQL,
+                covering transactions, payments and analytics.
+              </li>
+              <li>
+                Modular MVC architecture: routes, controllers and middleware for
+                authentication, products, orders, refunds and reporting.
+              </li>
+              <li>
+                JWT authentication and RBAC level 1, with separate permissions
+                for cashiers and administrators.
+              </li>
+              <li>
+                Checkout with barcode scanning, cart management, split payments,
+                refunds and cash drawer control via QZ Tray.
+              </li>
+              <li>
+                EOD X/Z reporting, transaction analytics and thermal printing.
+              </li>
+            </ul>
+          </li>
+          <li data-when="Nov 2025 — May 2026">
+            <h3>Web Development Intern</h3>
+            <p class="org">Gift Emporium Ltd. · Dublin, Ireland</p>
+            <ul>
+              <li>
+                Resolved 10+ UI defects across mobile, tablet and desktop in
+                under 4 weeks, including responsiveness and form validation
+                bugs.
+              </li>
+              <li>
+                Integrated payment gateway and email routing APIs end to end,
+                replacing a manual fulfilment workflow and saving an estimated
+                30 minutes per order.
+              </li>
+            </ul>
+          </li>
+          <li data-when="2025 — 2026">
+            <h3>MSc Information Systems with Computing</h3>
+            <p class="org">Dublin Business School · Dublin, Ireland</p>
+            <ul>
+              <li>1st Class Honours.</li>
+            </ul>
+          </li>
+          <li data-when="Jan 2024 — Feb 2025">
+            <h3>Freelance Full Stack Engineer</h3>
+            <p class="org">Aarushi Enterprises · Mumbai, India</p>
+            <ul>
+              <li>
+                Built REST APIs for a business management system covering
+                inventory, payments and distributors, in a 14 month production
+                engagement that replaced spreadsheets.
+              </li>
+              <li>
+                Modelled a normalised PostgreSQL schema with integrity checks
+                for payment, stock and order records under concurrent multi-user
+                access.
+              </li>
+              <li>
+                Worked through every SDLC stage: requirements, architecture,
+                build, test, deploy and live support.
+              </li>
+            </ul>
+          </li>
+          <li data-when="Feb 2023 — Jan 2024">
+            <h3>Software Development Intern</h3>
+            <p class="org">AneeVerse · Navi Mumbai, India</p>
+            <ul>
+              <li>
+                Shipped responsive features across a React/Next.js frontend and
+                Node.js backend.
+              </li>
+              <li>
+                Built a GitHub Actions CI/CD pipeline that cut deployment time
+                from 30 minutes to 5.
+              </li>
+              <li>
+                Integrated the Cal.com API end to end, reducing manual call
+                scheduling by 80%.
+              </li>
+            </ul>
+          </li>
+          <li data-when="2021 — 2024">
+            <h3>Bachelor of Computer Applications</h3>
+            <p class="org">Chandrabhan Sharma College · Mumbai, India</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <h2>Side projects</h2>
+        <div class="proj-grid">
+          <article>
+            <h3>QR Based Point of Sale</h3>
+            <p class="org">
+              React, Node.js, PostgreSQL, WebSockets, Railway, Vercel
+            </p>
+            <ul>
+              <li>
+                Real-time platform for customers, kitchen, cashier and admin on
+                one WebSocket layer, pushing orders from table to cashier in
+                under a second.
+              </li>
+              <li>
+                Per-table QR routing, live kitchen dashboard with automatic
+                ticket printing, and cashier checkout with full, partial and
+                combined refunds.
+              </li>
+              <li>
+                Analytics with 7 date-range filters, top-N sales ranking and
+                one-click CSV/PDF export.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Cloud Infrastructure Automation</h3>
+            <p class="org">
+              AWS EC2, Terraform, Docker, GitHub Actions, Ansible, Python
+            </p>
+            <ul>
+              <li>Provisioned AWS infrastructure with Terraform.</li>
+              <li>
+                CI/CD pipeline from GitHub Actions to DockerHub to EC2 via
+                Ansible, cutting deployment time by 15 minutes.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="contact">
+        <p class="status"><span class="dot"></span>Available for new roles</p>
+        <h2>Need an engineer?<br />Let's talk.</h2>
+        <p>Tell me about the team and the problem. I reply within a day.</p>
+        <button class="btn" data-open-contact data-cursor="Say hi">
+          Hire me
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Avi Asnani</p>
+      <p>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a
+          href="https://linkedin.com/in/aviasnani/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </p>
+      <a href="#home" id="toTop">Back to top ↑</a>
+    </footer>
+
+    <!-- Contact modal -->
+    <dialog class="modal" id="modal" aria-labelledby="mTitle">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <form id="form" novalidate>
+        <h2 id="mTitle">Say hello</h2>
+        <input
+          class="hp"
+          type="text"
+          name="company"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        />
+        <label>Name <input name="name" required autocomplete="name" /></label>
+        <label
+          >Email <input name="email" type="email" required autocomplete="email"
+        /></label>
+        <label
+          >What do you need? <textarea name="msg" rows="4" required></textarea>
+        </label>
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+      <div class="done" id="done" hidden>
+        <h2>Almost there</h2>
+        <p>Message sent. I'll reply within a day.</p>
+        <p>
+          You can also write to
+          <a href="mailto:aviasnani3104@gmail.com">aviasnani3104@gmail.com</a>.
+        </p>
+      </div>
+    </dialog>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
